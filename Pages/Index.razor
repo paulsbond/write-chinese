@@ -33,7 +33,7 @@
     {
         if (firstRender)
         {
-            module = await JS.InvokeAsync<IJSObjectReference>("import", "./Pages/Index.razor.js");
+            module = await JS.InvokeAsync<IJSObjectReference>("import", "./js/index.js");
         }
     }
 

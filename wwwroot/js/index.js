@@ -1,13 +1,15 @@
+var writer = new HanziWriter('grid-background-target', {
+    width: 100,
+    height: 100,
+    padding: 0,
+    showCharacter: false,
+    showOutline: false,
+    highlightOnComplete: false,
+    drawingWidth: 30,
+});
+
 export function quizCharacter(character) {
-    var writer = HanziWriter.create('grid-background-target', character, {
-        width: 100,
-        height: 100,
-        padding: 0,
-        showCharacter: false,
-        showOutline: false,
-        highlightOnComplete: false,
-        drawingWidth: 30,
-    });
+    writer.setCharacter(character);
     writer.quiz({
         onMistake: function (strokeData) {
             console.log('Oh no! you made a mistake on stroke ' + strokeData.strokeNum);
