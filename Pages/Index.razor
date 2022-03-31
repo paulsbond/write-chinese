@@ -2,9 +2,13 @@
 @implements IAsyncDisposable
 @inject IJSRuntime JS
 
-<div>
-    <button class="btn btn-primary" @onclick="Quiz">Quiz</button>
-</div>
+@foreach (var word in words)
+{
+    <p>
+        @word.Pinyin - @word.Definition
+        <button class="btn btn-primary" @onclick="() => Quiz(word)">Quiz</button>
+    </p>
+}
 
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" id="grid-background-target" style="width: 90%; height: 90%; max-width: 80vh; max-height: 80vh;">
     <line x1="0" y1="0" x2="100" y2="100" stroke="#DDD" />
@@ -33,11 +37,11 @@
         }
     }
 
-    private async void Quiz()
+    private async void Quiz(Word word)
     {
         if (module is not null)
         {
-            await module!.InvokeVoidAsync("quizCharacter", words[0].Simplified);
+            await module!.InvokeVoidAsync("quizCharacter", word.Simplified);
         }
     }
 
