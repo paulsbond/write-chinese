@@ -1,15 +1,6 @@
 import { Component } from '@angular/core';
+import { Word } from "./word";
 declare var HanziWriter: any;
-
-class Word {
-  constructor(
-    public simplified: string,
-    public traditional: string,
-    public sounds: string,
-    public pinyin: string,
-    public definition: string,
-  ) {}
-}
 
 @Component({
   selector: 'app-root',
