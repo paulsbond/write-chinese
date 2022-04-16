@@ -31,41 +31,9 @@ export class AppComponent {
   quiz(): void {
     this.writer.setCharacter(this.word?.simplified);
     this.writer.quiz({
-      onMistake: function (strokeData: any) {
-        console.log('Oh no! you made a mistake on stroke ' + strokeData.strokeNum);
-        console.log(
-          "You've made " +
-            strokeData.mistakesOnStroke +
-            ' mistakes on this stroke so far'
-        );
-        console.log(
-          "You've made " + strokeData.totalMistakes + ' total mistakes on this quiz'
-        );
-        console.log(
-          'There are ' +
-            strokeData.strokesRemaining +
-            ' strokes remaining in this character'
-        );
-      },
-      onCorrectStroke: function (strokeData: any) {
-        console.log('Yes!!! You got stroke ' + strokeData.strokeNum + ' correct!');
-        console.log(
-          'You made ' + strokeData.mistakesOnStroke + ' mistakes on this stroke'
-        );
-        console.log(
-          "You've made " + strokeData.totalMistakes + ' total mistakes on this quiz'
-        );
-        console.log(
-          'There are ' +
-            strokeData.strokesRemaining +
-            ' strokes remaining in this character'
-        );
-      },
       onComplete: function (summaryData: any) {
         console.log('You did it! You finished drawing ' + summaryData.character);
-        console.log(
-          'You made ' + summaryData.totalMistakes + ' total mistakes on this quiz'
-        );
+        console.log('You made ' + summaryData.totalMistakes + ' total mistakes');
       },
     });
   }
