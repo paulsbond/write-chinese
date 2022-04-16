@@ -1,0 +1,79 @@
+{
+  "configVersion": 1,
+  "timestamp": 1650137438590,
+  "index": "/write-chinese/index.html",
+  "assetGroups": [
+    {
+      "name": "app",
+      "installMode": "prefetch",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/write-chinese/favicon.ico",
+        "/write-chinese/index.html",
+        "/write-chinese/main.ff24993eac99d737.js",
+        "/write-chinese/manifest.webmanifest",
+        "/write-chinese/polyfills.ae6c8b7289bfbdaf.js",
+        "/write-chinese/runtime.78804f30d9627b75.js",
+        "/write-chinese/styles.70485e1160866a4b.css"
+      ],
+      "patterns": []
+    },
+    {
+      "name": "assets",
+      "installMode": "lazy",
+      "updateMode": "prefetch",
+      "cacheQueryOptions": {
+        "ignoreVary": true
+      },
+      "urls": [
+        "/write-chinese/assets/icons/icon-144x144.png",
+        "/write-chinese/assets/icons/icon-16x16.png",
+        "/write-chinese/assets/icons/icon-192x192.png",
+        "/write-chinese/assets/icons/icon-32x32.png",
+        "/write-chinese/assets/icons/icon-512x512.png",
+        "/write-chinese/assets/img/painting.jpg",
+        "/write-chinese/painting.e7e592429ff68975.jpg"
+      ],
+      "patterns": []
+    }
+  ],
+  "dataGroups": [],
+  "hashTable": {
+    "/write-chinese/assets/icons/icon-144x144.png": "5f41f9b90ab085341b62c643f71d8575bcf8c2aa",
+    "/write-chinese/assets/icons/icon-16x16.png": "12e600ff8fa4437ef849fb8a24e835ba9e865866",
+    "/write-chinese/assets/icons/icon-192x192.png": "01ae9d7ba9a9d690b575fc95637de963841581e5",
+    "/write-chinese/assets/icons/icon-32x32.png": "916dce4265034ab2ac1cff1cc31068e9b8cea40f",
+    "/write-chinese/assets/icons/icon-512x512.png": "d76dae031c367b9885c7d32994737a2f6438d8d6",
+    "/write-chinese/assets/img/painting.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
+    "/write-chinese/favicon.ico": "1eb4e34ec261c9831aa5137d8d2bd679a1ebfdc4",
+    "/write-chinese/index.html": "2324df4efc9a0086b3df30c2ab671e9479f1ee66",
+    "/write-chinese/main.ff24993eac99d737.js": "e4e7e63ee5122c65e1466a3abd035f39eb81347f",
+    "/write-chinese/manifest.webmanifest": "d1b2b92fa03498b8f761e2259957f04b7e6060a3",
+    "/write-chinese/painting.e7e592429ff68975.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
+    "/write-chinese/polyfills.ae6c8b7289bfbdaf.js": "b7c7cd7e06bc4a5ffbddfe18d1c6349e758feb73",
+    "/write-chinese/runtime.78804f30d9627b75.js": "f2f489aba836283d8b92847625cbb05e04b6dc7c",
+    "/write-chinese/styles.70485e1160866a4b.css": "d616940bff269686b065b4aa1f92e891d85c11d9"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ],
+  "navigationRequestStrategy": "performance"
+}
