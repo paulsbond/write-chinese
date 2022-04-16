@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650140219132,
+  "timestamp": 1650143730056,
   "index": "/write-chinese/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/write-chinese/favicon.ico",
         "/write-chinese/index.html",
-        "/write-chinese/main.ff24993eac99d737.js",
+        "/write-chinese/main.8c7e5f8778991dc1.js",
         "/write-chinese/manifest.webmanifest",
         "/write-chinese/polyfills.ae6c8b7289bfbdaf.js",
         "/write-chinese/runtime.78804f30d9627b75.js",
@@ -47,8 +47,8 @@
     "/write-chinese/assets/icons/icon-512x512.png": "e9a3d6034784c6d23f0afb039f328407b1d839a1",
     "/write-chinese/assets/img/painting.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/favicon.ico": "ec806bcc538c1e2f2bf7508fc184c5bdbdb655b4",
-    "/write-chinese/index.html": "e61efaa8acc01a53cbe5c3201c257fbd74d4e0d1",
-    "/write-chinese/main.ff24993eac99d737.js": "e4e7e63ee5122c65e1466a3abd035f39eb81347f",
+    "/write-chinese/index.html": "825df64dd3630fc8b488cae9df41982ad852cb33",
+    "/write-chinese/main.8c7e5f8778991dc1.js": "c415b1c568020d1fe643203a0358102c9518063e",
     "/write-chinese/manifest.webmanifest": "83c97d7feb1d77f5e299dc96dc402d2c9a36f9a6",
     "/write-chinese/painting.e7e592429ff68975.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/polyfills.ae6c8b7289bfbdaf.js": "b7c7cd7e06bc4a5ffbddfe18d1c6349e758feb73",
