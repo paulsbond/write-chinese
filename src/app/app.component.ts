@@ -8,7 +8,14 @@ declare var HanziWriter: any;
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+  private words = [
+    new Word("的", "的", "de5", "de", "indicates possession, like adding 's to a noun"),
+    new Word("我", "我", "wo3", "wǒ", "I; me"),
+    new Word("你", "你", "ni3", "nǐ", "you (singular)"),
+  ];
+
   writer: any;
+  word: Word = this.words[0];
 
   ngOnInit() {
     this.writer = new HanziWriter('grid-background-target', {
@@ -20,16 +27,11 @@ export class AppComponent {
       highlightOnComplete: false,
       drawingWidth: 30,
     });
+    this.quiz();
   }
 
-  words = [
-    new Word("的", "的", "de5", "de", "indicates possession, like adding 's to a noun"),
-    new Word("我", "我", "wo3", "wǒ", "I; me"),
-    new Word("你", "你", "ni3", "nǐ", "you (singular)"),
-  ];
-
-  quiz(word: Word): void {
-    this.writer.setCharacter(word.simplified);
+  quiz(): void {
+    this.writer.setCharacter(this.word.simplified);
     this.writer.quiz({
         onMistake: function (strokeData: any) {
             console.log('Oh no! you made a mistake on stroke ' + strokeData.strokeNum);
