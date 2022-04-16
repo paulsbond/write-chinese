@@ -1,1 +1,24 @@
 /* You can add global styles to this file, and also import other style files */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  color: #333;
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  height: 100%;
+  background-color: black;
+}
+
+body {
+  background-image: url("assets/img/painting.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  max-width: 100vh;
+  margin: auto;
+  padding: 20px;
+}

@@ -18,7 +18,7 @@ export class AppComponent {
   word: Word = this.words[0];
 
   ngOnInit() {
-    this.writer = new HanziWriter('grid-background-target', {
+    this.writer = new HanziWriter('writer', {
       width: 100,
       height: 100,
       padding: 0,
