@@ -3,7 +3,7 @@
   "short_name": "Write Chinese",
   "description": "Learn to write Chinese characters",
   "theme_color": "#c4b18b",
-  "background_color": "#000000",
+  "background_color": "#c4b18b",
   "display": "standalone",
   "scope": "./",
   "start_url": "./",
@@ -17,12 +17,6 @@
     {
       "src": "assets/icons/icon-32x32.png",
       "sizes": "32x32",
-      "type": "image/png",
-      "purpose": "maskable any"
-    },
-    {
-      "src": "assets/icons/icon-144x144.png",
-      "sizes": "144x144",
       "type": "image/png",
       "purpose": "maskable any"
     },
