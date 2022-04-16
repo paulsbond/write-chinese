@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { Word } from './word';
-import { WORDS } from './words';
+import { WordService } from './word.service';
 declare var HanziWriter: any;
 
 @Component({
@@ -10,7 +10,9 @@ declare var HanziWriter: any;
 })
 export class AppComponent {
   writer: any;
-  word: Word = WORDS[0];
+  word?: Word;
+
+  constructor(private wordService: WordService) {}
 
   ngOnInit() {
     this.writer = new HanziWriter('writer', {
@@ -22,11 +24,12 @@ export class AppComponent {
       highlightOnComplete: false,
       drawingWidth: 30,
     });
+    this.word = this.wordService.nextWord();
     this.quiz();
   }
 
   quiz(): void {
-    this.writer.setCharacter(this.word.simplified);
+    this.writer.setCharacter(this.word?.simplified);
     this.writer.quiz({
       onMistake: function (strokeData: any) {
         console.log('Oh no! you made a mistake on stroke ' + strokeData.strokeNum);
