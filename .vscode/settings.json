@@ -1,4 +1,6 @@
 {
   "editor.formatOnSave": true,
-  "files.insertFinalNewline": true,
+  "editor.renderWhitespace": "boundary",
+  "editor.rulers": [88],
+  "files.insertFinalNewline": true
 }
