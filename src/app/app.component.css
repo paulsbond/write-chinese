@@ -25,3 +25,26 @@ header {
   max-width: 65vh;
   max-height: 65vh;
 }
+
+footer {
+  align-self: stretch;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+button {
+  font-size: 1.2rem;
+  padding: 10px 25px;
+  background-color: #f0e0c6;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #24201a;
+}
+
+button#again {
+  border: 3px solid rgb(241, 177, 177);
+}
+
+button#good {
+  border: 3px solid rgb(144, 226, 144);
+}
