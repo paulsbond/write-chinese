@@ -15,6 +15,6 @@
 </svg>
 
 <footer>
-  <button id="again">Again</button>
-  <button id="good">Good</button>
+  <button [class.shown]="complete" id="again" (click)="again()">Again</button>
+  <button [class.shown]="complete" id="good" (click)="good()">Good</button>
 </footer>

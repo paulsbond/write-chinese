@@ -39,6 +39,7 @@ button {
   border: none;
   border-radius: 10px;
   box-shadow: 0 0 5px #24201a;
+  opacity: 0;
 }
 
 button#again {
@@ -47,4 +48,8 @@ button#again {
 
 button#good {
   border: 3px solid rgb(144, 226, 144);
+}
+
+button.shown {
+  opacity: 1;
 }

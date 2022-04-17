@@ -11,6 +11,7 @@ declare var HanziWriter: any;
 export class AppComponent {
   writer: any;
   word?: Word;
+  complete: boolean = false;
 
   constructor(private wordService: WordService) {}
 
@@ -24,16 +25,26 @@ export class AppComponent {
       highlightOnComplete: false,
       drawingWidth: 30,
     });
-    this.word = this.wordService.nextWord();
+    this.quiz();
+  }
+
+  good() {
+    this.word?.good();
+    this.quiz();
+  }
+
+  again() {
+    this.word?.again();
     this.quiz();
   }
 
   quiz(): void {
+    this.word = this.wordService.nextWord();
+    this.complete = false;
     this.writer.setCharacter(this.word?.simplified);
     this.writer.quiz({
-      onComplete: function (summaryData: any) {
-        console.log('You did it! You finished drawing ' + summaryData.character);
-        console.log('You made ' + summaryData.totalMistakes + ' total mistakes');
+      onComplete: (summaryData: any) => {
+        this.complete = true;
       },
     });
   }
