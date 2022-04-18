@@ -1,4 +1,7 @@
 /* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Source+Sans+Pro');
+@import url('https://fonts.googleapis.com/css2?display=swap&family=Ma+Shan+Zheng');
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,7 +10,7 @@
 
 html {
   color: #333;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 16px;
   height: 100%;
   background-color: #c4b18b;
