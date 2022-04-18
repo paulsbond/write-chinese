@@ -34,12 +34,11 @@ footer {
 
 button {
   font-size: 1.2rem;
-  padding: 10px 25px;
+  padding: 8px 20px;
   background-color: #f0e0c6;
-  border: none;
+  border: 3px solid #f0e0c6;
   border-radius: 10px;
   box-shadow: 0 0 5px #24201a;
-  opacity: 0;
 }
 
 button#again {
@@ -48,8 +47,4 @@ button#again {
 
 button#good {
   border: 3px solid rgb(144, 226, 144);
-}
-
-button.shown {
-  opacity: 1;
 }

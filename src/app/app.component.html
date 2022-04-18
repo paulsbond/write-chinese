@@ -15,6 +15,8 @@
 </svg>
 
 <footer>
-  <button [class.shown]="complete" id="again" (click)="again()">Again</button>
-  <button [class.shown]="complete" id="good" (click)="good()">Good</button>
+  <button *ngIf="complete == false" id="show">Show</button>
+  <button *ngIf="complete == false" id="hint">Hint</button>
+  <button *ngIf="complete" id="again" (click)="again()">Again</button>
+  <button *ngIf="complete" id="good" (click)="good()">Good</button>
 </footer>
