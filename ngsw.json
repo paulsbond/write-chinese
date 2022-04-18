@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650228893795,
+  "timestamp": 1650272663112,
   "index": "/write-chinese/index.html",
   "assetGroups": [
     {
@@ -13,11 +13,11 @@
       "urls": [
         "/write-chinese/favicon.ico",
         "/write-chinese/index.html",
-        "/write-chinese/main.2fa82575032b229e.js",
+        "/write-chinese/main.c58f5ea5bb286ec4.js",
         "/write-chinese/manifest.webmanifest",
         "/write-chinese/polyfills.ae6c8b7289bfbdaf.js",
         "/write-chinese/runtime.78804f30d9627b75.js",
-        "/write-chinese/styles.6ca18f6052da2511.css"
+        "/write-chinese/styles.e4271649068ea603.css"
       ],
       "patterns": []
     },
@@ -47,13 +47,13 @@
     "/write-chinese/assets/icons/icon-512x512.png": "e9a3d6034784c6d23f0afb039f328407b1d839a1",
     "/write-chinese/assets/img/painting.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/favicon.ico": "ec806bcc538c1e2f2bf7508fc184c5bdbdb655b4",
-    "/write-chinese/index.html": "eb1a7e791b081d413a068bfcda5a3c2a1111ac25",
-    "/write-chinese/main.2fa82575032b229e.js": "acb33635a634f62b9231bbf4bcb7132c968f778b",
+    "/write-chinese/index.html": "7a1cd53575224bc9e2edf659bf8428b05096cd4b",
+    "/write-chinese/main.c58f5ea5bb286ec4.js": "220e57a93365f8c9eab3d66603062880a2672c43",
     "/write-chinese/manifest.webmanifest": "83c97d7feb1d77f5e299dc96dc402d2c9a36f9a6",
     "/write-chinese/painting.e7e592429ff68975.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/polyfills.ae6c8b7289bfbdaf.js": "b7c7cd7e06bc4a5ffbddfe18d1c6349e758feb73",
     "/write-chinese/runtime.78804f30d9627b75.js": "f2f489aba836283d8b92847625cbb05e04b6dc7c",
-    "/write-chinese/styles.6ca18f6052da2511.css": "96d35d7f034866a2301ee91f98556924783ff984"
+    "/write-chinese/styles.e4271649068ea603.css": "97a3798a98396ac8eeb18cfe4ec7d8b0ddf0f304"
   },
   "navigationUrls": [
     {
