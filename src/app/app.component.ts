@@ -12,6 +12,7 @@ export class AppComponent {
   writer: any;
   word?: Word;
   complete: boolean = false;
+  characters: string = '';
 
   constructor(private wordService: WordService) {}
 
@@ -25,26 +26,42 @@ export class AppComponent {
       highlightOnComplete: false,
       drawingWidth: 30,
     });
-    this.quiz();
+    this.nextWord();
   }
 
   good() {
     this.word?.good();
-    this.quiz();
+    this.nextWord();
   }
 
   again() {
     this.word?.again();
+    this.nextWord();
+  }
+
+  nextWord() {
+    this.word = this.wordService.nextWord();
+    this.complete = false;
+    this.setCharacters();
     this.quiz();
   }
 
-  quiz(): void {
-    this.word = this.wordService.nextWord();
-    this.complete = false;
-    this.writer.setCharacter(this.word?.simplified);
+  setCharacters(index: number = -1) {
+    if (this.word === undefined) return;
+    const done = this.word.simplified.substring(0, index + 1);
+    this.characters = done + '_'.repeat(this.word.simplified.length - index - 1);
+  }
+
+  quiz(index: number = 0): void {
+    this.writer.setCharacter(this.word?.simplified[index]);
     this.writer.quiz({
       onComplete: (summaryData: any) => {
-        this.complete = true;
+        this.setCharacters(index);
+        if (index + 1 === this.word?.simplified.length) {
+          this.complete = true;
+        } else {
+          this.quiz(index + 1);
+        }
       },
     });
   }

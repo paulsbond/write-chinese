@@ -13,6 +13,11 @@ header {
   text-align: center;
 }
 
+.characters {
+  font-size: 1.3rem;
+  letter-spacing: 0.3rem;
+}
+
 .pinyin {
   font-size: 1.3rem;
   font-weight: bold;

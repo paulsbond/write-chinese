@@ -1,4 +1,5 @@
 <header>
+  <p class="characters">{{ characters }}</p>
   <p class="pinyin">{{ word?.pinyin }}</p>
   <p class="definition">{{ word?.definition }}</p>
 </header>
@@ -15,8 +16,8 @@
 </svg>
 
 <footer>
-  <button *ngIf="complete == false" id="show">Show</button>
-  <button *ngIf="complete == false" id="hint">Hint</button>
+  <button *ngIf="!complete" id="show">Show</button>
+  <button *ngIf="!complete" id="hint">Hint</button>
   <button *ngIf="complete" id="again" (click)="again()">Again</button>
   <button *ngIf="complete" id="good" (click)="good()">Good</button>
 </footer>
