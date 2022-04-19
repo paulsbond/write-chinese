@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { min } from 'rxjs';
 import { Word } from './word';
 import { WORDS } from './words';
 
