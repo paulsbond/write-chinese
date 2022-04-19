@@ -1,5 +1,8 @@
+const minute = 60 * 1000;
+const day = 24 * 60 * minute;
+
 export class Word {
-  seconds: number = 30;
+  interval: number = minute;
   due?: number;
 
   constructor(
@@ -10,13 +13,14 @@ export class Word {
     public definition: string
   ) {}
 
-  good(): void {
-    this.due = Date.now() + this.seconds * 1000;
-    this.seconds *= 2;
+  gotIt(): void {
+    this.due = Date.now() + this.interval;
+    if (this.interval == 4 * minute) this.interval = day;
+    if (this.interval <= 32 * day) this.interval *= 2;
   }
 
   again(): void {
-    this.seconds = 15;
-    this.good();
+    this.interval = minute;
+    this.due = Date.now() + this.interval;
   }
 }

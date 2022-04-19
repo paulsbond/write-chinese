@@ -29,8 +29,8 @@ export class AppComponent {
     this.nextWord();
   }
 
-  good() {
-    this.word?.good();
+  gotIt() {
+    this.word?.gotIt();
     this.nextWord();
   }
 
