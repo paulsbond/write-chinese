@@ -16,8 +16,8 @@
 </svg>
 
 <footer>
-  <button *ngIf="!complete" id="show">Show</button>
-  <button *ngIf="!complete" id="hint">Hint</button>
+  <button *ngIf="!complete" (click)="toggleOutline()">Outline</button>
+  <button *ngIf="!complete" (click)="animate()">Animate</button>
   <button *ngIf="complete" id="again" (click)="again()">Again</button>
   <button *ngIf="complete" id="gotit" (click)="gotIt()">Got It</button>
 </footer>
