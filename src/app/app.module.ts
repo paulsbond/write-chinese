@@ -5,9 +5,10 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { WriterComponent } from './writer/writer.component';
 
 @NgModule({
-  declarations: [AppComponent],
+  declarations: [AppComponent, WriterComponent],
   imports: [
     BrowserModule,
     AppRoutingModule,
