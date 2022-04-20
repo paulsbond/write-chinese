@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650477606869,
+  "timestamp": 1650478936448,
   "index": "/write-chinese/index.html",
   "assetGroups": [
     {
@@ -30,6 +30,12 @@
       },
       "urls": [
         "/write-chinese/assets/data/definitions.json",
+        "/write-chinese/assets/data/lists/hsk1.json",
+        "/write-chinese/assets/data/lists/hsk2.json",
+        "/write-chinese/assets/data/lists/hsk3.json",
+        "/write-chinese/assets/data/lists/hsk4.json",
+        "/write-chinese/assets/data/lists/hsk5.json",
+        "/write-chinese/assets/data/lists/hsk6.json",
         "/write-chinese/assets/data/pinyin.json",
         "/write-chinese/assets/icons/icon-16x16.png",
         "/write-chinese/assets/icons/icon-192x192.png",
@@ -44,6 +50,12 @@
   "dataGroups": [],
   "hashTable": {
     "/write-chinese/assets/data/definitions.json": "02d2b4d4455be9c1fe6993c70d37c059e51b6198",
+    "/write-chinese/assets/data/lists/hsk1.json": "20b246e00489ec4a9dbffc72d86cff6fc960bce4",
+    "/write-chinese/assets/data/lists/hsk2.json": "dc21d1eea6ba6ce55389c3c56d80dc2a56d58fc0",
+    "/write-chinese/assets/data/lists/hsk3.json": "2ddfe45667b805f09a3cca9949697254c051d4df",
+    "/write-chinese/assets/data/lists/hsk4.json": "4a006ed603149c4f6970512b00134d63643828d2",
+    "/write-chinese/assets/data/lists/hsk5.json": "b00f048aa0f071f38dedd09a18fb05442437f912",
+    "/write-chinese/assets/data/lists/hsk6.json": "bca77732d9d1ef4e90cb33aee41ae55fa3a730b0",
     "/write-chinese/assets/data/pinyin.json": "7234cfa237adbaf18623ab75c799c1ac44c03234",
     "/write-chinese/assets/icons/icon-16x16.png": "96fd188bd076e7a1b4e56706431e53f8f60a02fe",
     "/write-chinese/assets/icons/icon-192x192.png": "3bb0852ca21e8e7841e66d995a5c62f2aa6857c9",
