@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Word } from './word';
 import { WordService } from './word.service';
+import pinyin from './data/pinyin.json';
+import definitions from './data/definitions.json';
 declare var HanziWriter: any;
 
 @Component({
@@ -11,6 +13,8 @@ declare var HanziWriter: any;
 export class AppComponent {
   writer: any;
   word?: Word;
+  pinyin: string = '';
+  definition: string = '';
   complete: boolean = false;
   characters: string = '';
   characterIndex: number = 0;
@@ -69,6 +73,8 @@ export class AppComponent {
 
   nextWord() {
     this.word = this.wordService.nextWord();
+    this.pinyin = pinyin[this.word.simplified as keyof typeof pinyin];
+    this.definition = definitions[this.word.simplified as keyof typeof definitions];
     this.complete = false;
     this.characterIndex = 0;
     this.setCharacters();
