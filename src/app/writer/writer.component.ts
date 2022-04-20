@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import pinyin from '../data/pinyin.json';
 import definitions from '../data/definitions.json';
 import { SchedulerService } from '../services/scheduler.service';
-declare var HanziWriter: any;
+const HanziWriter = require('hanzi-writer');
 
 @Component({
   selector: 'app-writer',
@@ -22,7 +22,7 @@ export class WriterComponent {
   constructor(private schedulerService: SchedulerService) {}
 
   ngOnInit() {
-    this.writer = new HanziWriter('writer', {
+    this.writer = new HanziWriter.default('writer', {
       width: 100,
       height: 100,
       padding: 0,
