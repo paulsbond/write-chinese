@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1650491313713,
+  "timestamp": 1650543936057,
   "index": "/write-chinese/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "/write-chinese/favicon.ico",
         "/write-chinese/index.html",
-        "/write-chinese/main.7a74de07e908ec4c.js",
+        "/write-chinese/main.d2534b3e1f83fddf.js",
         "/write-chinese/manifest.webmanifest",
         "/write-chinese/polyfills.ae6c8b7289bfbdaf.js",
         "/write-chinese/runtime.533b5ac465fac5d6.js",
@@ -33,6 +33,7 @@
         "/write-chinese/assets/icons/icon-192x192.png",
         "/write-chinese/assets/icons/icon-32x32.png",
         "/write-chinese/assets/icons/icon-512x512.png",
+        "/write-chinese/assets/img/hsk.jpg",
         "/write-chinese/assets/img/painting.jpg",
         "/write-chinese/painting.e7e592429ff68975.jpg"
       ],
@@ -45,10 +46,11 @@
     "/write-chinese/assets/icons/icon-192x192.png": "3bb0852ca21e8e7841e66d995a5c62f2aa6857c9",
     "/write-chinese/assets/icons/icon-32x32.png": "86ac225b2fc3f242b3229ff59d1398e060e13bbc",
     "/write-chinese/assets/icons/icon-512x512.png": "e9a3d6034784c6d23f0afb039f328407b1d839a1",
+    "/write-chinese/assets/img/hsk.jpg": "cb8b3713a7506da9dc4f86449531632401be75fe",
     "/write-chinese/assets/img/painting.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/favicon.ico": "ec806bcc538c1e2f2bf7508fc184c5bdbdb655b4",
-    "/write-chinese/index.html": "145a0cf8beba0e3146c36afa5ca3b9aa3172e70e",
-    "/write-chinese/main.7a74de07e908ec4c.js": "d3622a1e708f2c50f0837da6230bc63922a25bed",
+    "/write-chinese/index.html": "2ae0d90fb3b9f644ba3b795f4274c85fe2a1aee5",
+    "/write-chinese/main.d2534b3e1f83fddf.js": "49d83a3d0d090e78445b43f80cf0060914705d8c",
     "/write-chinese/manifest.webmanifest": "83c97d7feb1d77f5e299dc96dc402d2c9a36f9a6",
     "/write-chinese/painting.e7e592429ff68975.jpg": "cd67d1cc9edbff8c21394ed0a253c0c507787802",
     "/write-chinese/polyfills.ae6c8b7289bfbdaf.js": "b7c7cd7e06bc4a5ffbddfe18d1c6349e758feb73",
