@@ -1,6 +1,7 @@
 import { Section } from '../classes/section';
 
-export const hsk: Section = new Section('HSK 2.0 (2013)');
+export const hsk: Section = new Section('HSK 2.0');
+hsk.id = 'hsk';
 hsk.image = 'assets/img/hsk.jpg';
 
 const level1 = new Section('Level 1');
