@@ -1,0 +1,35 @@
+:host {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    background-color: #f6f0e0;
+    font-size: 3rem;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+}
+
+a {
+    font-size: 2rem;
+    color: inherit;
+    background-color: #c4b18b;
+    text-decoration: none;
+    border-radius: 15px;
+    padding: 0.5rem 1rem;
+    margin-bottom: 2rem;
+    text-align: center;
+    font-weight: bold;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 0 5px black;
+}
+
+.course h2 {
+    margin-bottom: 0.5rem;
+}
+
+.course img {
+    width: 100%;
+}
