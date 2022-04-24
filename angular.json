@@ -22,11 +22,7 @@
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
             "tsConfig": "tsconfig.app.json",
-            "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/manifest.webmanifest"
-            ],
+            "assets": ["src/assets", "src/favicon.ico", "src/manifest.webmanifest"],
             "styles": ["src/styles.css"],
             "scripts": [],
             "serviceWorker": true,
@@ -81,22 +77,6 @@
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
             "browserTarget": "write-chinese:build"
-          }
-        },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "tsconfig.spec.json",
-            "karmaConfig": "karma.conf.js",
-            "assets": [
-              "src/assets",
-              "src/favicon.ico",
-              "src/manifest.webmanifest"
-            ],
-            "styles": ["src/styles.css"],
-            "scripts": []
           }
         }
       }
