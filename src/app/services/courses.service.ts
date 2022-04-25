@@ -9,4 +9,8 @@ export class CoursesService {
   courses: Course[] = [hsk2];
 
   constructor() {}
+
+  getCourse(id: string): Course | undefined {
+    return this.courses.find((course) => course.id === id);
+  }
 }

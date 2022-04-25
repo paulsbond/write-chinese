@@ -1,1 +1,4 @@
-<p>course works!</p>
+<h1>{{ course?.title }}</h1>
+<div *ngFor="let section of course?.sections">
+  {{ section.title }}: {{ section.words.length }} words
+</div>
