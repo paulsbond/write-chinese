@@ -5,9 +5,9 @@ import { environment } from '../environments/environment';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { CourseComponent } from './course/course.component';
-import { CoursesComponent } from './courses/courses.component';
-import { WriterComponent } from './writer/writer.component';
+import { CourseComponent } from './components/course.component';
+import { CoursesComponent } from './components/courses.component';
+import { WriterComponent } from './components/writer.component';
 
 @NgModule({
   declarations: [AppComponent, CourseComponent, CoursesComponent, WriterComponent],
