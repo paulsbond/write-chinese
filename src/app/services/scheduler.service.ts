@@ -1,5 +1,4 @@
 import { Injectable } from '@angular/core';
-import { hsk } from '../courses/hsk';
 
 const minute = 60 * 1000;
 const day = 24 * 60 * minute;
@@ -11,7 +10,7 @@ export class SchedulerService {
   constructor() {}
 
   nextWord(): string {
-    return hsk.subsections[0].words[0];
+    return '的';
   }
 
   schedule(word: string, reset: boolean = false) {

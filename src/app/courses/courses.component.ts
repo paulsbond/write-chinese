@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { hsk } from './hsk';
+import { CoursesService } from '../services/courses.service';
 
 @Component({
   selector: 'app-courses',
@@ -7,8 +7,7 @@ import { hsk } from './hsk';
   styleUrls: ['./courses.component.css'],
 })
 export class CoursesComponent implements OnInit {
-  hsk = hsk;
-  constructor() {}
+  constructor(public coursesService: CoursesService) {}
 
   ngOnInit(): void {}
 }
