@@ -7,5 +7,10 @@ export interface Course {
 
 export interface Section {
   title: string;
+  subsections: Subsection[];
+}
+
+export interface Subsection {
+  title: string;
   words: string[];
 }

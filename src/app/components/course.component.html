@@ -1,4 +1,7 @@
 <h1>{{ course?.title }}</h1>
 <div *ngFor="let section of course?.sections">
-  {{ section.title }}: {{ section.words.length }} words
+  <h2>{{ section.title }}</h2>
+  <div *ngFor="let subsection of section.subsections">
+    {{ subsection.title }}: {{ subsection.words.length }} words
+  </div>
 </div>
